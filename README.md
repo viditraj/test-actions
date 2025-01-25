@@ -1,6 +1,6 @@
 # UDS Common Utils
 
-UDS Common Utils is a collection of reusable components, services, styles, and build tools for UDS MFE applications.
+UDS Common Utils is a collection of reusable components, services, styles, and build tools for UDS MFE applications
 
 [NPM Package: 1.0.0](https://uds.artifactory.cec.lab.emc.com/artifactory/api/npm/uds-common-utils/)
 
