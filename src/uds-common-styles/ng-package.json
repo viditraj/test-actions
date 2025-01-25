@@ -1,0 +1,12 @@
+{
+    "$schema": "../../node_modules/ng-packagr/package.schema.json",
+    "dest": "../../dist/uds-common-styles",
+    "lib": {
+      "entryFile": "./public-api.ts"
+    },
+    "assets":[
+      "./src"
+    ]
+  }
+
+

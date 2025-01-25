@@ -1,0 +1,12 @@
+<def-page-wrapper>
+    <def-page-content>
+        <div class="clr-col">
+            <def-breadcrumb [useRouter]="false" [breadcrumbPaths]="breadcrumbPaths"
+                (breadcrumbClicked)="onPathChange($event)">
+            </def-breadcrumb>
+        </div>
+        <div *ngIf="selectedComponent">
+            <ng-container *ngComponentOutlet="selectedComponent"></ng-container>
+        </div>
+    </def-page-content>
+  </def-page-wrapper>

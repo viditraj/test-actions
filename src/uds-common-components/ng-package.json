@@ -1,0 +1,9 @@
+{
+    "$schema": "../../node_modules/ng-packagr/package.schema.json",
+    "dest": "../../dist/uds-common-components",
+    "lib": {
+      "entryFile": "./public-api.ts"
+    }
+  }
+
+

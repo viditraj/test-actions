@@ -1,0 +1,59 @@
+{
+    "roles":[
+        "admin user",
+        "base user",
+        "UDS",
+        "Site Admin",
+        "Customer"
+    ],
+    "http-settings": {
+        "webui_ran_access" : true
+    },
+    "keymanager-sed-settings": {
+        "settings" : {
+            "kmip_enabled" : false,
+            "kmip_server" : "",
+            "supported" : true
+            }
+    },
+    "saml-services-settings":{
+        "settings" : 
+            {
+                "sso_enabled" : false
+            }
+    },
+    "saml-logout-slostatus": {
+        "slo_enabled":false
+    },
+    "zones-summary": {
+        "summary" : {
+            "count" : 2,
+            "list" : [ "System", "test" ]
+            }
+    },
+    "listchildprivs": {
+        "privilege" : [
+        {
+            "id" : "ISI_PRIV_LOGIN_CONSOLE",
+            "name" : "Console",
+            "permission" : "r"
+        },
+        {
+            "id" : "ISI_PRIV_LOGIN_PAPI",
+            "name" : "Platform API",
+            "permission" : "r"
+        },
+        {
+            "id" : "ISI_PRIV_LOGIN_PAPI_BYPASS_MFA",
+            "name" : "MFA API bypass Privilege",
+            "permission" : "r"
+        },
+        {
+            "id" : "ISI_PRIV_LOGIN_SSH",
+            "name" : "SSH",
+            "permission" : "r"
+        }
+    ]
+    }
+
+}

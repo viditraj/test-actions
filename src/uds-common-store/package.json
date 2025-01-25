@@ -1,0 +1,85 @@
+{
+  "name": "@uds-common-utils/store",
+  "version": "1.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --configuration=development --port=4207 --watch --live-reload --poll 2000",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "prettier:check": "prettier --list-different \"src/**/*.ts\"",
+    "test": "ng test --no-watch --code-coverage",
+    "lint": "ng lint",
+    "lint:fix": "ng lint --fix"
+  },
+  "private": false,
+  "repository": {
+    "type": "https",
+    "url": "https://eos2git.cec.lab.emc.com/powerscale-misc/uds-common-utils"
+  },
+  "publishConfig": {
+	"access": "public",
+    "registry": "https://uds.artifactory.cec.lab.emc.com/artifactory/api/npm/uds-common-utils/"
+  },
+  "dependencies": {
+    "tslib": "^2.8.1"
+  },
+  "peerDependencies": {
+    "@angular/animations": "^17.3.0",
+    "@angular/cdk": "^17.3.10",
+    "@angular/cli": "^17.3.10",
+    "@angular/common": "^17.3.0",
+    "@angular/compiler": "^17.3.12",
+    "@angular/compiler-cli": "^17.3.0",
+    "@angular/core": "^17.3.12",
+    "@angular/forms": "^17.3.0",
+    "@angular/platform-browser": "^17.3.0",
+    "@angular/platform-browser-dynamic": "^17.3.0",
+    "@angular/router": "^17.3.0",
+    "@schematics/angular": "^19.0.4",
+    "ngrx-store-localstorage": "^17.0.0",
+    "@ngrx/store": "^19.0.0",
+    "@ngrx/store-devtools": "^19.0.0",
+    "angular-i18next": "^17.0.2",
+    "i18next": "^23.7.16",
+    "rxjs": "~7.8.0",
+    "zone.js": "~0.14.3"
+  },
+  "devDependencies": {
+    "@angular-eslint/builder": "17.5.3",
+    "@angular-eslint/eslint-plugin": "17.5.3",
+    "@angular-eslint/eslint-plugin-template": "17.5.3",
+    "@angular-eslint/schematics": "17.5.3",
+    "@angular-eslint/template-parser": "17.5.3",
+    "@angular-devkit/architect": "^0.1900.4",
+    "@angular-devkit/build-angular": "^17.3.10",
+    "@angular-devkit/core": "^19.0.4",
+    "@angular-devkit/schematics": "^19.0.4",
+    "@types/jasmine": "~5.1.0",
+    "@types/node": "^22.10.1",
+    "@typescript-eslint/eslint-plugin": "8.18.2",
+    "@typescript-eslint/parser": "8.18.2",
+    "@web/dev-server-esbuild": "^1.0.3",
+    "@web/test-runner": "^0.18.0",
+    "@web/test-runner-chrome": "^0.17.0",
+    "@web/test-runner-cli": "^0.11.0",
+    "@web/test-runner-playwright": "^0.11.0",
+    "child_process": "^1.0.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^4.3.8",
+    "jasmine": "^5.5.0",
+    "jasmine-core": "^5.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "ng-packagr": "^17.3.0",
+    "prettier": "^3.4.2",
+    "prettier-eslint": "^16.3.0",
+    "prettier-eslint-cli": "^8.0.1",
+    "typescript": "~5.4.2",
+    "web-test-runner-jasmine": "^0.0.6"
+  },
+  "overrides": {
+    "inflight": "latest",
+    "glob": "latest",
+    "eslint": "latest"
+  }
+}

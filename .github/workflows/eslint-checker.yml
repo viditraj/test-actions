@@ -1,0 +1,29 @@
+name: ESLint Check
+
+on:
+  pull_request:
+    branches:
+      - "**"  # Run on all branches when a PR is created or updated
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18  # Use the Node.js version compatible with Angular 17
+
+      # Step 3: Install Dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Step 4: Run ESLint
+      - name: Run ESLint
+        run: npm run lint

@@ -1,0 +1,18 @@
+<def-page-wrapper title="remote-app-2">
+    <def-page-content>
+            Welcome to Remote App 2
+              <div>
+                  <div *ngIf="roles$ | async as roles"; else empty>Roles -</div>
+                    <ul *ngIf="roles$ | async as roles; else empty">
+                      <div><b>Roles:-</b></div>
+                      <li *ngFor="let role of roles">
+                          {{ role }}
+                      </li>
+                    </ul>
+                  <ng-template #empty>
+                    <p>No roles available</p>
+                    </ng-template>
+              </div>
+    </def-page-content>
+  <router-outlet></router-outlet>    
+  </def-page-wrapper>

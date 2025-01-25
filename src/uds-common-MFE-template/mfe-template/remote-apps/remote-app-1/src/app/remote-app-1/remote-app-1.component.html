@@ -1,0 +1,15 @@
+<def-page-content>
+          Welcome to Remote app 1
+          <div>
+            <ul *ngIf="roles$ | async as roles; else empty">
+              <div><b>Roles:-</b></div>
+              <li *ngFor="let role of roles">
+                {{ role }}
+              </li>
+            </ul>
+            <ng-template #empty>
+              <p>No roles available</p>
+            </ng-template>
+          </div>
+          <div> webui-ran-access: {{ httpSettings$ | async }}</div>
+  </def-page-content>

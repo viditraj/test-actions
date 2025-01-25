@@ -1,0 +1,48 @@
+<div>
+    Welcome to Sub Component 2
+    </div>
+        <def-dg>
+            <def-dg-column>
+                    Node ID
+            </def-dg-column>
+            <def-dg-column>
+                    In b/s
+            </def-dg-column>
+            <def-dg-column>
+                    Out b/s
+            </def-dg-column>
+            <def-dg-column>
+                    Total used
+            </def-dg-column>
+            <def-dg-column>
+                    HDD used
+            </def-dg-column>
+            <def-dg-column>
+                    HDD size
+            </def-dg-column>
+            <def-datagrid-row
+                    *defDgItems="let node of clusterNodes"
+                    [defDgItem]="node"
+                    [defDgSelectable]="true"
+            >       <def-dg-cell>
+                            <span
+                            (click)="onSelect(node)">{{node.id}}</span>
+                    </def-dg-cell>
+                    <def-dg-cell>
+                            {{node.in}}
+                    </def-dg-cell>
+                    <def-dg-cell>
+                            {{node.out}}
+                    </def-dg-cell>
+                    <def-dg-cell>
+                            {{node.totalused}}
+                    </def-dg-cell>
+                    <def-dg-cell>
+                            {{node.hddused}}
+                    </def-dg-cell>
+                    <def-dg-cell>
+                            {{node.hddsize}}
+                    </def-dg-cell>
+            </def-datagrid-row>
+    </def-dg>
+    

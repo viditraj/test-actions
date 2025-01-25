@@ -1,0 +1,49 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext",
+        "ES2022"
+      ],
+      "baseUrl": "src",
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "declaration": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "outDir": "dist",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": false,
+      "noImplicitOverride": true,
+      "noPropertyAccessFromIndexSignature": true,
+      "noImplicitReturns": true,
+      "sourceMap": true,
+      "experimentalDecorators": true,
+      "importHelpers": true,
+      "target": "ES2022",
+      "module": "ES2022",
+      "useDefineForClassFields": false,
+      "declarationMap": true,
+      "inlineSources": true,
+      "emitDecoratorMetadata": true
+    },
+    "angularCompilerOptions": {
+      "enableI18nLegacyMessageIdFormat": false,
+      "strictInjectionParameters": true,
+      "strictInputAccessModifiers": true,
+      "strictTemplates": true,
+      "skipMetadataEmit": true,
+      "enableIvy": true,
+      "compilationMode": "partial"
+    },
+    "include": ["src"],
+    "exclude": ["node_modules","dist"]
+  }
