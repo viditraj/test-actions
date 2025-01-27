@@ -22,7 +22,7 @@ jobs:
 
       # Step 3: Install Dependencies
       - name: Install Dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       # Step 4: Run ESLint
       - name: Run ESLint
